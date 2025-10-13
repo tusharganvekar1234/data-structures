@@ -26,7 +26,7 @@ void pop(STACK *s) {
     }
 }
 
-void display(const STACK *s) {
+void display(STACK s) {
     int i;
     if (s->top == -1) {
         printf("\nStack is empty");
@@ -61,7 +61,7 @@ int main() {
                 pop(&s);
                 break;
             case 3:
-                display(&s);
+                display(s);
                 break;
             case 4:
                 exit(0);
@@ -72,4 +72,5 @@ int main() {
 
     return 0;
 }
+
 
