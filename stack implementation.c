@@ -28,12 +28,12 @@ void pop(STACK *s) {
 
 void display(STACK s) {
     int i;
-    if (s->top == -1) {
+    if (s.top == -1) {
         printf("\nStack is empty");
     } else {
         printf("\nStack contents are:\n");
-        for (i = s->top; i >= 0; i--) {
-            printf("%d\n", s->data[i]);
+        for (i = s.top; i >= 0; i--) {
+            printf("%d\n", s.data[i]);
         }
     }
 }
@@ -72,5 +72,6 @@ int main() {
 
     return 0;
 }
+
 
 
